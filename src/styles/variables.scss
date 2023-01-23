@@ -1,0 +1,31 @@
+@forward './root-vars.scss';
+
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+
+$categories-colors-map: (
+  astrology: #3a0088,
+  sports: #e61c5d,
+  business: #005d6c,
+  lifestyle: #ffbd39,
+  technology: #00bbf0,
+  news: #ec610a,
+  cinema: #fd2e2e,
+  uncategorized: #07617d,
+  world: #6c567b,
+  srilanka: #6a65d8,
+  others: #000000,
+);
+
+@mixin categories-text-color() {
+  @each $category, $color in $categories-colors-map {
+    .category-#{$category} & {
+      color: $color;
+    }
+  }
+}
+
+$color-text: #f441cb;

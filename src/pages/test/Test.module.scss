@@ -1,0 +1,10 @@
+// @use './variables.scss' as var;
+
+@mixin paddings {
+    padding: 200px;
+    margin: 3px;
+}
+
+.testclass {
+    @include paddings();
+}
