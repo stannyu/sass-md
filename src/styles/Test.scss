@@ -1,0 +1,16 @@
+@use './variables.scss' as var;
+
+.textClass {
+    color: darkslateblue;
+    padding: 1em;
+    @include var.categories-text-color();
+}
+
+.titleClass {
+    color: var.$color-text;
+}
+
+.extraColorClass {
+    color: var.$color-title;
+    // color: orange;
+}
